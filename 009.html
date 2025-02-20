@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+</head>
+<body>
+    <h1>Fatorial</h1>
+    <button onclick="calcularFatorial()">Calcular</button>
+
+    <script>
+        function calcularFatorial() {
+            let num = parseInt(prompt("Digite um número:"));
+            let fatorial = 1;
+            for (let i = 1; i <= num; i++) {
+                fatorial *= i;
+            }
+            alert(`O fatorial de ${num} é ${fatorial}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+</head>
+<body>
+    <h1>Par ou Ímpar</h1>
+    <button onclick="verificarParOuImpar()">Verificar</button>
+
+    <script>
+        function verificarParOuImpar() {
+            let numero = parseInt(prompt("Digite um número:"));
+            let resultado = (numero % 2 === 0) ? "par" : "ímpar";
+            alert(`O número ${numero} é ${resultado}.`);
+        }
+    </script>
+</body>
+</html>

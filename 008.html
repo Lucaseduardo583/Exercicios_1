@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversão de String</title>
+</head>
+<body>
+    <h1>Inversão de String</h1>
+    <button onclick="inverter()">Inverter</button>
+
+    <script>
+        function inverter() {
+            let palavra = prompt("Digite uma palavra:");
+            let invertida = palavra.split("").reverse().join("");
+            alert(`Palavra invertida: ${invertida}`);
+        }
+    </script>
+</body>
+</html>

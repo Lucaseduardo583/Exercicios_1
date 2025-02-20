@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <button onclick="tabuada()">Gerar Tabuada</button>
+
+    <script>
+        function tabuada() {
+            let num = parseInt(prompt("Digite um número:"));
+            let resultado = "";
+            for (let i = 1; i <= 10; i++) {
+                resultado += `${num} x ${i} = ${num * i}\n`;
+            }
+            alert(resultado);
+        }
+    </script>
+</body>
+</html>

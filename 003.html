@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior de Três</title>
+</head>
+<body>
+    <h1>Maior de Três</h1>
+    <button onclick="maiorNumero()">Verificar</button>
+
+    <script>
+        function maiorNumero() {
+            let a = parseFloat(prompt("Digite o primeiro número:"));
+            let b = parseFloat(prompt("Digite o segundo número:"));
+            let c = parseFloat(prompt("Digite o terceiro número:"));
+            let maior = Math.max(a, b, c);
+            alert(`O maior número é: ${maior}`);
+        }
+    </script>
+</body>
+</html>

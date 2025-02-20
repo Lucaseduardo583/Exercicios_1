@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos Dígitos</title>
+</head>
+<body>
+    <h1>Soma dos Dígitos</h1>
+    <button onclick="somaDigitos()">Calcular</button>
+
+    <script>
+        function somaDigitos() {
+            let num = prompt("Digite um número:");
+            let soma = num.split("").reduce((acc, digito) => acc + parseInt(digito), 0);
+            alert(`A soma dos dígitos de ${num} é ${soma}`);
+        }
+    </script>
+</body>
+</html>

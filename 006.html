@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <h1>Fibonacci</h1>
+    <button onclick="fibonacci()">Gerar Sequência</button>
+
+    <script>
+        function fibonacci() {
+            let termos = parseInt(prompt("Quantos termos da sequência deseja?"));
+            let a = 0, b = 1, resultado = "0, 1";
+            for (let i = 2; i < termos; i++) {
+                let proximo = a + b;
+                resultado += `, ${proximo}`;
+                a = b;
+                b = proximo;
+            }
+            alert(`Fibonacci (${termos} termos): ${resultado}`);
+        }
+    </script>
+</body>
+</html>
